@@ -143,4 +143,8 @@ nav .button{
     .main h1{
         font-size: 72px;
     }
+
+    .content-row{
+        padding: 5% 5%;
+    }
 }
