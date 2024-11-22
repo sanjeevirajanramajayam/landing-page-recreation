@@ -74,7 +74,7 @@ nav .button{
 
 .content-row-img img{
     width: 100%;
-    z-index: -1;
+    height: 100%;
 }
 
 .content-row .category{
@@ -99,6 +99,7 @@ nav .button{
     margin-top: 10px;
     text-align: right;
     color: #A9C693;
+    font-weight: bold;
 }
 
 .color1 {
@@ -123,7 +124,11 @@ nav .button{
     display: none;
 }
 
+
 @media(max-width: 700px){
+    nav img{
+        width: 30%;
+    }
     .content{
         flex-direction: column;
         row-gap: 1em;
@@ -146,5 +151,10 @@ nav .button{
 
     .content-row{
         padding: 5% 5%;
+    }
+
+    div:nth-child(3)
+    {
+        order: 2;    /* Changes the order of the flex item higher than fourth element..... */
     }
 }
